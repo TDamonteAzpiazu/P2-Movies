@@ -1,0 +1,81 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  /* Remove default margin */
+  body,
+  h1, h2, h3, h4, h5, h6,
+  p,
+  ul, ol,
+  figure,
+  blockquote,
+  dl /* For definition lists */ {
+    margin: 0;
+  }
+  
+  /* Remove default padding */
+  h1, h2, h3, h4, h5, h6,
+  ul, ol,
+  figure,
+  blockquote,
+  p,
+  dl /* For definition lists */ {
+    padding: 0;
+  }
+  
+  /* Set core body defaults */
+  body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+  }
+  
+  /* Remove list styles */
+  ul, ol {
+    list-style: none;
+  }
+  
+  /* A elements that don't have a class get default styles */
+  a:not([class]) {
+    text-decoration-skip-ink: auto;
+  }
+  
+  /* Make images easier to work with */
+  img {
+    max-width: 100%;
+    display: block;
+  }
+  
+  /* Inherit fonts for inputs and buttons */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  /* Remove border on iframes */
+  iframe {
+    border: none;
+  }
+  
+  /* Remove default button styles */
+  button,
+  input[type="button"],
+  input[type="reset"],
+  input[type="submit"] {
+    -webkit-appearance: none;
+    appearance: none;
+  }
+  
+  /* Remove inheritance for button elements */
+  button {
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }
+  
+  /* Reset button and input focus styles */
+  button:focus,
+  input:focus {
+    outline: none;
+  }

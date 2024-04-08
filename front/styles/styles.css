@@ -1,0 +1,26 @@
+body {
+    color: #ffffff;
+    background-color: #1a237e;
+}
+
+header,
+footer {
+    background-color: rgba(110, 198, 255, 0.9);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin-right: auto;
+    margin-left: 0.5vw;
+}
+
+header span {
+    margin: 0vw 1.5vw 0px 0.5vw;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
