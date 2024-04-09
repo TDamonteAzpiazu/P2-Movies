@@ -1,19 +1,22 @@
-console.log(tempData);
 
-function mapMovies() {
+$.get("https://students-api.up.railway.app/movies" , (data) => {
+    mapMovies(data) ;
+})
+
+function mapMovies(data) {
     const container = document.getElementById("movieContainer");
 
-    const movies = getMovies();
+    const movies = getMovies(data);
     movies.map(movie => createMovieCard(movie))
     .forEach(card => container.appendChild(card));
 }
 
-function getMovies() {
-    return tempData
+function getMovies(data) {
+    return data ;
 }
 
-function createMovieCard(tempData) {
-    const {title, year, director, duration, genre, rate, poster} = tempData ;
+function createMovieCard(data) {
+    const {title, year, director, duration, genre, rate, poster} = data ;
 
     const movieCard = document.createElement("div");
     const movieTitle = document.createElement("a");
@@ -48,4 +51,3 @@ function createMovieCard(tempData) {
     return movieCard
 }
 
-mapMovies() ;
