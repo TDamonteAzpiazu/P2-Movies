@@ -16,7 +16,7 @@ function createMovieCard(tempData) {
     const {title, year, director, duration, genre, rate, poster} = tempData ;
 
     const movieCard = document.createElement("div");
-    const movieTitle = document.createElement("h2");
+    const movieTitle = document.createElement("a");
     const movieYear = document.createElement("p");
     const movieDirector = document.createElement("p");
     const movieDuration = document.createElement("p");
@@ -35,6 +35,7 @@ function createMovieCard(tempData) {
     movieCard.classList.add("cards"); 
     moviePoster.classList.add("poster"); 
     movieTitle.classList.add("tituloPelicula")
+    movieTitle.classList.add("etiqA")
 
     movieCard.appendChild(movieTitle) ; 
     movieCard.appendChild(moviePoster) ; 
