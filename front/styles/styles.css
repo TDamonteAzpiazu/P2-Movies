@@ -18,10 +18,13 @@ footer {
 header h1 {
     margin-right: auto;
     margin-left: 0.5vw;
+    background-color: rgba(4, 14, 146, 0.35);
 }
 
 header span {
-    margin: 0vw 1.5vw 0px 0.5vw;
+    margin: 1vw 1.5vw 0.5vw 0.5vw;
+    padding: 0vw 0.5vw 0vw 0.5vw;
+    background-color: rgba(4, 14, 146, 0.35);
 }
 
 footer {
@@ -74,4 +77,9 @@ main section div h2 {
 .tituloPelicula {
     font-weight: bolder;
     font-size: 1.5em;
+}
+
+.etiqA {
+    text-decoration: none;
+    color: inherit;
 }
