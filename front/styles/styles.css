@@ -1,11 +1,15 @@
 body {
-    color: #ffffff;
-    background-color: #1a237e;
+    color: #000000;
+    background-image: url(https://images.unsplash.com/photo-1551917951-148edcd8ea8d?q=80&w=1863&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header,
 footer {
-    background-color: rgba(110, 198, 255, 0.9);
+    background-color: rgba(4, 14, 146, 0.4);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -23,4 +27,51 @@ header span {
 footer {
     display: flex;
     justify-content: center;
+}
+
+main section div h2 {
+    margin-top: 1em;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+#movieContainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.cards {
+    border: solid 2px rgba(4, 14, 146, 0.9);
+    width: fit-content;
+    padding: 0 1em 0.5em 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em;
+    transition: 1s;
+    font-weight: bold;
+}
+
+.cards:hover {
+    transform: scale(1.1);
+}
+
+.cards h2 {
+    transition: 0.5s;
+}
+
+.cards:hover h2{
+    color: rgb(2, 8, 90);
+}
+
+.poster {
+    width: 15vw;
+    height: auto;
+}
+
+.tituloPelicula {
+    font-weight: bolder;
+    font-size: 1.5em;
 }

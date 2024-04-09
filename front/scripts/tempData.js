@@ -1,32 +1,53 @@
 const tempData = [
   {
-    title: "Guardians of the Galaxy Vol. 2",
-    year: 2017,
-    director: "James Gunn",
-    duration: "2h 16min",
-    genre: ["Action", "Adventure", "Comedy"],
-    rate: 7.7,
-    poster:
-      "https://m.media-amazon.com/images/M/MV5BNjM0NTc0NzItM2FlYS00YzEwLWE0YmUtNTA2ZWIzODc2OTgxXkEyXkFqcGdeQXVyNTgwNzIyNzg@._V1_SX300.jpg",
-  },
-  {
-    title: "Star Wars: Episode IV - A New Hope",
-    year: 1977,
-    director: "George Lucas",
-    duration: "2h 1min",
-    genre: ["Action", "Adventure", "Fantasy", "Sci-Fi"],
+    title: "Interstellar",
+    year: 2014,
+    director: "Chistopher Nolan",
+    duration: "2h 49min",
+    genre: ["Ciencia Ficcion", "Drama"],
     rate: 8.7,
     poster:
-      "https://m.media-amazon.com/images/M/MV5BOTA5NjhiOTAtZWM0ZC00MWNhLThiMzEtZDFkOTk2OTU1ZDJkXkEyXkFqcGdeQXVyMTA4NDI1NTQx._V1_SX300.jpg",
+      "https://m.media-amazon.com/images/M/MV5BZjdkOTU3MDktN2IxOS00OGEyLWFmMjktY2FiMmZkNWIyODZiXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg",
   },
   {
-    title: "The Lord of the Rings: The Fellowship of the Ring",
-    year: 2001,
-    director: "Peter Jackson",
-    duration: "2h 58min",
-    genre: ["Action", "Adventure", "Drama", "Fantasy"],
-    rate: 8.8,
+    title: "Shutter Island",
+    year: 2010,
+    director: "Martin Scorsese",
+    duration: "2h 13min",
+    genre: ["Terror", "Suspenso", "Drama", "Misterio"],
+    rate: 8.2,
     poster:
-      "https://m.media-amazon.com/images/M/MV5BN2EyZjM3NzUtNWUzMi00MTgxLWI0NTctMzY4M2VlOTdjZWRiXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_SX300.jpg",
+      "https://m.media-amazon.com/images/M/MV5BYzhiNDkyNzktNTZmYS00ZTBkLTk2MDAtM2U0YjU1MzgxZjgzXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg",
   },
+  {
+    title: "Inglorious Basterds",
+    year: 2009,
+    director: "Quentin Tarantino",
+    duration: "2h 33min",
+    genre: ["Bélico", "Drama", "Acción", "Comedia"],
+    rate: 8.4,
+    poster:
+      "https://m.media-amazon.com/images/M/MV5BOTJiNDEzOWYtMTVjOC00ZjlmLWE0NGMtZmE1OWVmZDQ2OWJhXkEyXkFqcGdeQXVyNTIzOTk5ODM@._V1_FMjpg_UX1000_.jpg",
+  },
+  {
+    title: "The Imitation Game",
+    year: 2014,
+    director: "Morten Tyldum",
+    duration: "1h 53min",
+    genre: ["Biopic", "Drama", "Thriller", "Bélica"],
+    rate: 8,
+    poster:
+      "https://m.media-amazon.com/images/M/MV5BNjI3NjY1Mjg3MV5BMl5BanBnXkFtZTgwMzk5MDQ3MjE@._V1_.jpg",
+  },
+  {
+    title: "John Wick 4",
+    year: 2023,
+    director: "Chad Stahelski",
+    duration: "2h 49min",
+    genre: ["Acción", "Aventura", "Suspenso"],
+    rate: 7.7,
+    poster:
+      "https://m.media-amazon.com/images/M/MV5BMjA5Yjg4NzktOTMyNy00ZjlhLTk4YWQtY2RiOTQwN2UwNjY2XkEyXkFqcGdeQXVyMTU5OTA4NTIz._V1_.jpg",
+  },
+
 ];
