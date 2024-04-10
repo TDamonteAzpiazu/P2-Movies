@@ -48,6 +48,6 @@ function createMovieCard(data) {
     movieCard.appendChild(movieGenre) ; 
     movieCard.appendChild(movieRate) ; 
 
-    return movieCard
+    return movieCard;
 }
 
