@@ -12,9 +12,9 @@
   </head>
   <body>
     <header>
-      <nav class="container-fluid navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+      <nav class="container-fluid navbar navbar-expand-lg" data-bs-theme="dark" style="background-color:rgba(4, 14, 146, 0.4);">
         <div class="container-fluid">
-          <a class="navbar-brand" href="./index.html" style="font-size: 2rem;">IMDB.TDA</a>
+          <a class="navbar-brand" href="./index.html" style="font-size: 2rem; font-weight: bold">IMDB.TDA</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -31,7 +31,7 @@
               </li>
             </ul>
             <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="background-color: transparent; border-color: white; color: white;">
               <button class="btn btn-outline-light" type="submit">Search</button>
             </form>
           </div>
@@ -50,12 +50,18 @@
           </div>
           <div class="dias">
             <h2>Día 3</h2>
+            <p>Hoy implementamos Bootstrap para algunos estilos, cambié el diseño de mi header y muchos estilos los modifique directo con "style" en vez de ir al archivo de CSS.</p>
+          </div>
+          <div class="dias">
+            <h2>Día 4</h2>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga veritatis dignissimos nostrum iure maiores adipisci repellat facilis explicabo unde error labore eum temporibus natus optio, eligendi accusantium quidem laborum earum.</p>
           </div>
       </section>
     </main>
-    <footer>
-      <h3>©Copyright 2024. All rights reserved</h3>
+    <footer style="background-color: rgba(4, 14, 146, 0.4);">
+      <div class="container text-center text-white" style="font-size: 1.7rem">
+        <p class="m-0">Derechos de autor &copy; 2024 IMBD.TDA</p>
+      </div>
     </footer>
   </body>
 </html>

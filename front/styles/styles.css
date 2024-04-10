@@ -10,18 +10,6 @@ body {
     min-height: 100vh;
 }
 
-footer {
-    background-color: rgba(4, 14, 146, 0.4);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-footer {
-    display: flex;
-    justify-content: center;
-}
-
 main {
     display: flex;
     flex-direction: column;
@@ -30,12 +18,6 @@ main {
 
 main section {
     flex: 1;
-}
-
-main section div h2 {
-    margin-top: 0.5em;
-    text-align: center;
-    font-size: 2.5em;
 }
 
 #movieContainer {
@@ -90,15 +72,6 @@ main section div h2 {
     margin: 1em 0 0 1em;
 }
 
-.lista2 {
-    margin: 0.5em 0 0 2em;
-    list-style: disc;
-}
-
-.lista2 li {
-    margin-top: 1em;
-}
-
 .lista li {
     display: flex;
     flex-direction: row;
@@ -120,8 +93,13 @@ main section div h2 {
 .dias {
     width: 70%;
     margin: 1em 1em 1em 1em;
-    padding: 0vw 1vw 1vw 1vw;
+    padding: 0.5vw 1vw 1vw 1vw;
     border: solid 2px  rgba(4, 14, 146, 0.9);
+}
+
+.dias h2 {
+    font-size: 2rem;
+    font-weight: bolder;
 }
 
 .dias p {
