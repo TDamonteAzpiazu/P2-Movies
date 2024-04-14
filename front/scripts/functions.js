@@ -14,34 +14,40 @@ function createMovieCard(data) {
     const {title, year, director, duration, genre, rate, poster} = data ;
 
     const movieCard = document.createElement("div");
+    const moviePoster = document.createElement("img");
+    const movieInfo = document.createElement("div");
     const movieTitle = document.createElement("a");
     const movieYear = document.createElement("p");
     const movieDirector = document.createElement("p");
     const movieDuration = document.createElement("p");
     const movieGenre = document.createElement("p");
     const movieRate = document.createElement("p");
-    const moviePoster = document.createElement("img");
 
+    console.log(genre)
+
+    moviePoster.src = poster ; 
     movieTitle.innerHTML = title ; 
     movieYear.innerHTML = `Año: ${year}`; 
     movieDirector.innerHTML = `Director: ${director}`; 
     movieDuration.innerHTML = `Duración: ${duration}`; 
-    movieGenre.innerHTML = `Género: ${genre}`; 
+    movieGenre.innerHTML = `Género: ${genre.join(", ")}`; 
     movieRate.innerHTML = `Puntaje: ${rate}`; 
-    moviePoster.src = poster ; 
 
     movieCard.classList.add("cards"); 
     moviePoster.classList.add("poster"); 
+    movieInfo.classList.add("info")
     movieTitle.classList.add("tituloPelicula")
     movieTitle.classList.add("etiqA")
 
-    movieCard.appendChild(movieTitle) ; 
-    movieCard.appendChild(moviePoster) ; 
-    movieCard.appendChild(movieYear) ; 
-    movieCard.appendChild(movieDirector) ; 
-    movieCard.appendChild(movieDuration) ; 
-    movieCard.appendChild(movieGenre) ; 
-    movieCard.appendChild(movieRate) ; 
+    movieInfo.appendChild(movieTitle) ; 
+    movieInfo.appendChild(movieYear) ; 
+    movieInfo.appendChild(movieDirector) ; 
+    movieInfo.appendChild(movieDuration) ; 
+    movieInfo.appendChild(movieGenre) ; 
+    movieInfo.appendChild(movieRate) ; 
+    
+    movieCard.appendChild(moviePoster) ;
+    movieCard.appendChild(movieInfo) ;
 
     return movieCard;
 }
