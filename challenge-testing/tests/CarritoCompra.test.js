@@ -5,8 +5,13 @@ const CarritoCompra = require("../index");
 //aplicarDescuento(porcentaje): Aplica un descuento al total de la compra según el porcentaje especificado.
 
 describe("La función agregarProducto" , () => {
+    let testCarrito;
+
+    beforeEach( () => {
+        testCarrito = new CarritoCompra() ;
+    })
+
     it("Debe dar error si el producto es inválido", () => {
-        const testCarrito = new CarritoCompra();
         const productoInvalido = null ;
 
         expect( () => {
@@ -15,7 +20,6 @@ describe("La función agregarProducto" , () => {
     })
 
     it("Debe dar error si el producto no tiene un precio asignado", () => {
-        const testCarrito = new CarritoCompra();
         const productoSinPrecio = {nombre: "Prod 1", cantidad: 1} ;
 
         expect( () => {
@@ -24,7 +28,6 @@ describe("La función agregarProducto" , () => {
     })
 
     it("Debe agregar al CarritoCompra el producto ingresado", () => {
-        const testCarrito = new CarritoCompra();
         const producto = {nombre: "Prod 1", precio: 10, cantidad: 1} ;
 
         const inicial = testCarrito.carrito.length ;
@@ -49,8 +52,13 @@ describe("La función calcularTotal" , () => {
 })
 
 describe("La función aplicarDescuento" , () => {
+    let testCarrito ;
+
+    beforeEach( () => {
+        testCarrito = new CarritoCompra() ;
+    })
+
     it("Debe dar error si el porcentaje es inválido", () => {
-        const testCarrito = new CarritoCompra();
         const porcentajeInvalido = null ;
 
         expect( () => {
@@ -59,7 +67,6 @@ describe("La función aplicarDescuento" , () => {
     })
 
     it("Debe dar error si el porcentaje ingresado no es un valor entre 0 y 100", () => {
-        const testCarrito = new CarritoCompra();
         const porcentajeFueraDeRango1 = 150;
         const porcentajeFueraDeRango2 = -30;
 
@@ -73,15 +80,15 @@ describe("La función aplicarDescuento" , () => {
     })
     
     it("Debe devolver el precio del carrito con el porcentaje de descuento aplicado", () => {
-        const testCarrito = new CarritoCompra();
         const producto1 = {nombre: "Prod 1", precio: 10, cantidad: 1} ;
         const producto2 = {nombre: "Prod 2", precio: 5, cantidad: 2} ;
-        const testPorcentaje = 20 ;
 
         testCarrito.agregarProducto(producto1);
         testCarrito.agregarProducto(producto2);
 
-        expect(testCarrito.aplicarDescuento(testPorcentaje)).toEqual(16);
+        expect(testCarrito.aplicarDescuento(20)).toEqual(16);
+        expect(testCarrito.aplicarDescuento(100)).toEqual(0);
+        expect(testCarrito.aplicarDescuento(50)).toEqual(10);
     })
 })
 
