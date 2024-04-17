@@ -11,7 +11,7 @@ const axios = require ("axios")
 
 async function getData() {
     try {
-        const data = await axios.get("https://students-api.up.railway.app/movies");
+        const data = await axios.get("http://localhost:3000/movies");
         mapMovies(data.data) ;
     } catch (error) {
         alert("Error al obtener las películas.")

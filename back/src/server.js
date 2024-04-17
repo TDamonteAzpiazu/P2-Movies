@@ -1,7 +1,14 @@
 const express = require ("express")  ;
-const app = express() ;
-const router = require("./routes/indexRoute")
+const indexRouter = require("./routes/indexRoute")
 
-app.use(router)
+const app = express() ;
+
+const morgan = require("morgan")
+const cors = require("cors")
+app.use(morgan("dev"))
+app.use(cors())
+app.use(express.json())
+
+app.use(indexRouter)
 
 module.exports = app ;
