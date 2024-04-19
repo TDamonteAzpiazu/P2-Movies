@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <title>Webs recomendadas</title>
+  </head>
+  <body>
+    <header>
+      <nav class="container-fluid navbar navbar-expand-lg" data-bs-theme="dark" style="background-color:rgba(4, 14, 146, 0.4);">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html" style="font-size: 2rem; font-weight: bold">IMDB.TDA</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="./proyecto.html">Sobre Mi Proyecto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./webs.html">Webs Recomendadas</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav" style="margin-right: 8px;">
+              <li class="nav-item">
+                <a class="nav-link" href="./formAdmin.html">Admin</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="background-color: transparent; border-color: white; color: white;">
+              <button class="btn btn-outline-light" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+        <section id="section1">
+            <div id="formContainer">
+                <h2>Agregar películas</h2>
+                <div>
+                    <form>
+                        <div>
+                            <label for="movieTitle">Titulo:</label>
+                            <input type="text" name="movieTitle" id="movieTitle" placeholder="Titulo">
+                        </div>
+                        <div>
+                            <label for="movieYear">Año:</label>
+                            <input type="number" name="movieYear" id="movieYear" placeholder="Año">
+                        </div>
+                        <div>
+                            <label for="movieDirector">Director:</label>
+                            <input type="text" name="movieDirector" id="movieDirector" placeholder="Director">
+                        </div>
+                        <div>
+                            <label for="movieDuration">Duración:</label>
+                            <input type="time" name="movieDuration" id="movieDuration">
+                        </div>
+                        <div>
+                            <label for="movieGenre">Géneros:</label>
+                            <div id="generos">
+                                <input type="checkbox" name="movieGenre" id="genreAction">
+                                <label for="genreAction">Acción</label>
+                                <input type="checkbox" name="movieGenre" id="genreAnimated">
+                                <label for="genreAnimated">Animada</label>
+                                <input type="checkbox" name="movieGenre" id="genreAdventure">
+                                <label for="genreAdventure">Aventura</label>
+                                <input type="checkbox" name="movieGenre" id="genreWar">
+                                <label for="genreWar">Bélicas</label>
+                                <input type="checkbox" name="movieGenre" id="genreBiopic">
+                                <label for="genreBiopic">Biopic</label>
+                                <input type="checkbox" name="movieGenre" id="genreSciFi">
+                                <label for="genreSciFi">Ciencia Ficción</label>
+                                <input type="checkbox" name="movieGenre" id="genreComedy">
+                                <label for="genreComedy">Comedia</label>
+                                <input type="checkbox" name="movieGenre" id="genreDocumentary">
+                                <label for="genreDocumentary">Documental</label>
+                                <input type="checkbox" name="movieGenre" id="genreDrama">
+                                <label for="genreDrama">Drama</label>
+                                <input type="checkbox" name="movieGenre" id="genreFantasy">
+                                <label for="genreFantasy">Fantasía</label>
+                                <input type="checkbox" name="movieGenre" id="genreHistorical">
+                                <label for="genreHistorical">Histórica</label>
+                                <input type="checkbox" name="movieGenre" id="genreMusical">
+                                <label for="genreMusical">Musical</label>
+                                <input type="checkbox" name="movieGenre" id="genrePolicial">
+                                <label for="genrePolicial">Policial</label>
+                                <input type="checkbox" name="movieGenre" id="genreRomantic">
+                                <label for="genreRomantic">Romántica</label>
+                                <input type="checkbox" name="movieGenre" id="genreSuspense">
+                                <label for="genreSuspense">Suspenso</label>
+                                <input type="checkbox" name="movieGenre" id="genreTerror">
+                                <label for="genreTerror">Terror</label>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="movieRate">Puntaje:</label>
+                            <input type="number" name="movieRate" id="movieRate" placeholder="Puntaje">
+                        </div>
+                        <div>
+                            <label for="moviePoster">Poster:</label>
+                            <input type="url" name="moviePoster" id="moviePoster" placeholder="Url">
+                        </div>
+                        <div>
+                            <button>Añadir película</button>
+                            <button>Limpiar formulario</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer style="background-color: rgba(4, 14, 146, 0.4);">
+      <div class="container text-center text-white" style="font-size: 1.7rem">
+        <p class="m-0">Derechos de autor &copy; 2024 IMBD.TDA</p>
+      </div>
+    </footer>
+  </body>
+</html>

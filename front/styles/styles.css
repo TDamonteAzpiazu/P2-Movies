@@ -123,3 +123,44 @@ main section {
     font-size: 1.1em;
     font-weight: bold;
 }
+
+#section1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#formContainer {
+    background-color: rgba(4, 14, 146, 0.4);
+    color: white;
+    border: 2px solid rgba(4, 14, 146, 0.9);
+    border-radius: 15px;
+    margin: 2em 2em 2em 2em;
+    padding: 0.5em;
+}
+
+#formContainer h2 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#formContainer div {
+    margin-top: 0.5em;
+}
+
+#formContainer div button {
+    color: white;
+}
+
+#formContainer div label {
+    font-size: 1.5em;
+}
+
+#generos {
+    font-size: 0.75em;
+    margin: 2em;
+}
+
+#generos label {
+    margin-right: 1.8em;
+}
