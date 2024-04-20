@@ -68,38 +68,53 @@
                         <div>
                             <label for="movieGenre">Géneros:</label>
                             <div id="generos">
-                                <input type="checkbox" name="movieGenre" id="genreAction">
-                                <label for="genreAction">Acción</label>
-                                <input type="checkbox" name="movieGenre" id="genreAnimated">
-                                <label for="genreAnimated">Animada</label>
-                                <input type="checkbox" name="movieGenre" id="genreAdventure">
-                                <label for="genreAdventure">Aventura</label>
-                                <input type="checkbox" name="movieGenre" id="genreWar">
-                                <label for="genreWar">Bélicas</label>
-                                <input type="checkbox" name="movieGenre" id="genreBiopic">
-                                <label for="genreBiopic">Biopic</label>
-                                <input type="checkbox" name="movieGenre" id="genreSciFi">
-                                <label for="genreSciFi">Ciencia Ficción</label>
-                                <input type="checkbox" name="movieGenre" id="genreComedy">
-                                <label for="genreComedy">Comedia</label>
-                                <input type="checkbox" name="movieGenre" id="genreDocumentary">
-                                <label for="genreDocumentary">Documental</label>
-                                <input type="checkbox" name="movieGenre" id="genreDrama">
-                                <label for="genreDrama">Drama</label>
-                                <input type="checkbox" name="movieGenre" id="genreFantasy">
-                                <label for="genreFantasy">Fantasía</label>
-                                <input type="checkbox" name="movieGenre" id="genreHistorical">
-                                <label for="genreHistorical">Histórica</label>
-                                <input type="checkbox" name="movieGenre" id="genreMusical">
-                                <label for="genreMusical">Musical</label>
-                                <input type="checkbox" name="movieGenre" id="genrePolicial">
-                                <label for="genrePolicial">Policial</label>
-                                <input type="checkbox" name="movieGenre" id="genreRomantic">
-                                <label for="genreRomantic">Romántica</label>
-                                <input type="checkbox" name="movieGenre" id="genreSuspense">
-                                <label for="genreSuspense">Suspenso</label>
-                                <input type="checkbox" name="movieGenre" id="genreTerror">
-                                <label for="genreTerror">Terror</label>
+                              <label for="genreAction">Acción</label>
+                              <input type="checkbox" name="movieGenre" id="genreAction">
+
+                              <label for="genreAnimated">Animada</label>
+                              <input type="checkbox" name="movieGenre" id="genreAnimated">
+
+                              <label for="genreAdventure">Aventura</label>
+                              <input type="checkbox" name="movieGenre" id="genreAdventure">
+
+                              <label for="genreWar">Bélicas</label>
+                              <input type="checkbox" name="movieGenre" id="genreWar">
+
+                              <label for="genreBiopic">Biopic</label>
+                              <input type="checkbox" name="movieGenre" id="genreBiopic">
+
+                              <label for="genreSciFi">Ciencia Ficción</label>
+                              <input type="checkbox" name="movieGenre" id="genreSciFi">
+
+                              <label for="genreComedy">Comedia</label>
+                              <input type="checkbox" name="movieGenre" id="genreComedy">
+
+                              <label for="genreDocumentary">Documental</label>
+                              <input type="checkbox" name="movieGenre" id="genreDocumentary">
+
+                              <label for="genreDrama">Drama</label>
+                              <input type="checkbox" name="movieGenre" id="genreDrama">
+
+                              <label for="genreFantasy">Fantasía</label>
+                              <input type="checkbox" name="movieGenre" id="genreFantasy">
+
+                              <label for="genreHistorical">Histórica</label>
+                              <input type="checkbox" name="movieGenre" id="genreHistorical">
+
+                              <label for="genreMusical">Musical</label>
+                              <input type="checkbox" name="movieGenre" id="genreMusical">
+
+                              <label for="genrePolicial">Policial</label>
+                              <input type="checkbox" name="movieGenre" id="genrePolicial">
+
+                              <label for="genreRomantic">Romántica</label>
+                              <input type="checkbox" name="movieGenre" id="genreRomantic">
+
+                              <label for="genreSuspense">Suspenso</label>
+                              <input type="checkbox" name="movieGenre" id="genreSuspense">
+                                
+                              <label for="genreTerror">Terror</label>
+                              <input type="checkbox" name="movieGenre" id="genreTerror">
                             </div>
                         </div>
                         <div>
@@ -110,9 +125,9 @@
                             <label for="moviePoster">Poster:</label>
                             <input type="url" name="moviePoster" id="moviePoster" placeholder="Url">
                         </div>
-                        <div>
-                            <button>Añadir película</button>
-                            <button>Limpiar formulario</button>
+                        <div id="buttonDiv">
+                            <button id="addMovieButton" class="formButton">Añadir película</button>
+                            <button id="clearFormButton" class="formButton">Limpiar formulario</button>
                         </div>
                     </form>
                 </div>
@@ -124,5 +139,6 @@
         <p class="m-0">Derechos de autor &copy; 2024 IMBD.TDA</p>
       </div>
     </footer>
+    <script src="./scripts/formButtons.js"></script>
   </body>
 </html>
