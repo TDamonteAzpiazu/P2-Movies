@@ -24,7 +24,44 @@ const genreTerror = document.getElementById("genreTerror");
 
 const addMovie = () => {
     event.preventDefault(); 
-    console.log("Añadir Peliculas funciona")
+    if(movieTitle.value===""||movieDirector.value===""||movieYear.value===""||movieDuration.value===""||movieRate.value===""||moviePoster.value===""){
+        alert("Faltan campos por completar");
+        return
+    }
+
+    if(!genreAction.checked && !genreAnimated.checked && !genreAdventure.checked && !genreWar.checked &&!genreBiopic.checked && !genreSciFi.checked && !genreComedy.checked && !genreDocumentary.checked && !genreDrama.checked && !genreFantasy.checked && !genreHistorical.checked && !genreMusical.checked && !genrePolicial.checked && !genreRomantic.checked && !genreSuspense.checked && !genreTerror.checked) {
+        alert("Debes seleccionar al menos un género");
+        return
+    }
+
+    const selectedGenres = [];
+
+    if (genreAction.checked) selectedGenres.push("Acción");
+    if (genreAnimated.checked) selectedGenres.push("Animada");
+    if (genreAdventure.checked) selectedGenres.push("Aventura");
+    if (genreWar.checked) selectedGenres.push("Bélica");
+    if (genreBiopic.checked) selectedGenres.push("Biopic");
+    if (genreSciFi.checked) selectedGenres.push("Ciencia Ficción");
+    if (genreComedy.checked) selectedGenres.push("Comedia");
+    if (genreDocumentary.checked) selectedGenres.push("Documental");
+    if (genreDrama.checked) selectedGenres.push("Drama");
+    if (genreFantasy.checked) selectedGenres.push("Fantasía");
+    if (genreHistorical.checked) selectedGenres.push("Histórica");
+    if (genreMusical.checked) selectedGenres.push("Musical");
+    if (genrePolicial.checked) selectedGenres.push("Policial");
+    if (genreRomantic.checked) selectedGenres.push("Romántica");
+    if (genreSuspense.checked) selectedGenres.push("Suspenso");
+    if (genreTerror.checked) selectedGenres.push("Terror");    
+
+    const newMovie = {};
+    newMovie.title = movieTitle.value
+    newMovie.year = movieYear.value
+    newMovie.director = movieDirector.value
+    newMovie.duration = movieDuration.value
+    newMovie.genre = selectedGenres
+    newMovie.rate = movieRate.value
+    newMovie.poster = moviePoster.value
+    return newMovie;
 }
 
 addMovieButton.addEventListener("click" , addMovie);

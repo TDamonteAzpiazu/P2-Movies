@@ -30,6 +30,7 @@ main section {
 .cards {
     border: solid 2px rgba(4, 14, 146, 0.9);
     width: fit-content;
+    /* height: fit-content; */
     /* padding: 0 1em 0.5em 1em; */
     display: flex;
     flex-direction: column;
@@ -53,8 +54,8 @@ main section {
 }
 
 .poster {
-    width: 20vw;
-    height: auto;
+    width: 15vw;
+    height: 100%;
 }
 
 .info {
@@ -76,7 +77,8 @@ main section {
 
 .tituloPelicula {
     font-weight: bolder;
-    font-size: 1.2em;
+    font-size: 1.35em;
+    margin-bottom: 1em;
 }
 
 .etiqA {

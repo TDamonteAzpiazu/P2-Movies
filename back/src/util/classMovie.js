@@ -1,4 +1,4 @@
-class Movie {
+class MovieClass {
     constructor( {title, year, director, duration, genre, rate, poster }) {
         if (!title || !year || !director || !duration || !genre || !rate || !poster) {
             throw new Error("Todos los campos son necesarios")
@@ -14,4 +14,4 @@ class Movie {
     }
 }
 
-module.exports = Movie
+module.exports = MovieClass
