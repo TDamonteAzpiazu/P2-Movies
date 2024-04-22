@@ -30,16 +30,13 @@ main section {
 .cards {
     border: solid 2px rgba(4, 14, 146, 0.9);
     width: fit-content;
-    /* height: fit-content; */
-    /* padding: 0 1em 0.5em 1em; */
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 1em;
-    transition: 1s;
+    transition: 1.5s;
     font-weight: bold;
     border-radius: 15px;
-    /* background-color: rgba(26, 26, 113, 0.678); */
     position: relative;
     overflow: hidden;
     text-align: center;
@@ -159,7 +156,7 @@ main section {
 }
 
 #generos {
-    font-size: 0.75em;
+    font-size: 0.95em;
     margin: 2em;
 }
 

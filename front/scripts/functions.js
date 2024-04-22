@@ -1,9 +1,11 @@
+const container = document.getElementById("movieContainer");
+
 function mapMovies(data) {
-    const container = document.getElementById("movieContainer");
 
     const movies = getMovies(data);
     movies.map(movie => createMovieCard(movie))
     .forEach(card => container.appendChild(card));
+
 }
 
 function getMovies(data) {
