@@ -1,5 +1,5 @@
 const app = require("./src/server")
-const dbCon = require("./src/config/dbCon")
+const dbCon = require("./src/db/config/dbCon")
 require("dotenv").config() ;
 
 dbCon().then(

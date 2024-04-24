@@ -1,4 +1,4 @@
-const Movie = require("../models/Movie")
+const Movie = require("../db/models/Movie")
 
 
 module.exports = {
