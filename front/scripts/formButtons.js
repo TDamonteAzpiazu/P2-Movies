@@ -9,10 +9,18 @@ const moviePoster = document.getElementById("moviePoster");
 
 const genreCheckboxes = document.querySelectorAll(".genre") ;
 
+const currentDate = new Date().getFullYear()
+
 const addMovie = () => {
     event.preventDefault(); 
-    if(movieTitle.value===""||movieDirector.value===""||movieYear.value===""||movieDuration.value===""||movieRate.value===""||moviePoster.value===""){
+    if(!movieTitle.value||!movieDirector.value||!movieYear.value||!movieDuration.value||!movieRate.value||!moviePoster.value){
         alert("Faltan campos por completar");
+        return
+    } else if (movieYear.value > currentDate){
+        alert("Coloca una fecha válida")
+        return
+    } else if (isNaN(movieRate.value) || movieRate.value < 0.1 || movieRate.value > 10) {
+        alert("Coloca un puntaje válido")
         return
     }
 

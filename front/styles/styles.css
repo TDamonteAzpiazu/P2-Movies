@@ -34,7 +34,7 @@ main section {
     flex-direction: column;
     align-items: center;
     margin: 1em;
-    transition: 1.5s;
+    transition: 1s;
     font-weight: bold;
     border-radius: 15px;
     position: relative;
@@ -67,9 +67,10 @@ main section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transition: top 0.5s;
+    transition: top 1s;
     color: white;
     font-size: 0.8em;
+    padding: 1rem;
 }
 
 .tituloPelicula {
