@@ -1,2 +1,2 @@
 node_modules
-.env
+# .env (comentado para que el .env se suba al repo, pero en otros proyectos no se subiría al ser información sensible)

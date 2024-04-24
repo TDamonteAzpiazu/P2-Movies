@@ -1,11 +1,11 @@
 const app = require("./src/server")
 const dbCon = require("./src/config/dbCon")
-const port = 3000
+require("dotenv").config() ;
 
 dbCon().then(
     (res) => {
-        app.listen(port, () => {
-            console.log(`La app esta lista en el puerto ${port}`);
+        app.listen(process.env.PORT, () => {
+            console.log(`La app esta lista en el puerto ${process.env.PORT}`);
         }) ;
     }
 ).catch(err=>{

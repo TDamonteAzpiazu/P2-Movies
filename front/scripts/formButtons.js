@@ -1,3 +1,5 @@
+const axios = require("axios")
+
 const movieTitle = document.getElementById("movieTitle");
 const movieYear = document.getElementById("movieYear");
 const movieDirector = document.getElementById("movieDirector");
@@ -27,16 +29,27 @@ const addMovie = () => {
         return
     }
 
+    const tiempoOriginal = movieDuration.value;
+    const [horas, minutos] = tiempoOriginal.split(":").map(Number);
+    const durationString = `${horas}h ${minutos}min`;
+
     const newMovie = {
         title : movieTitle.value ,
         year : movieYear.value ,
         director : movieDirector.value ,
-        duration : movieDuration.value ,
+        duration : durationString ,
         genre : selectedGenres ,
         rate : movieRate.value ,
         poster : moviePoster.value
     };
-    return newMovie;
+    
+    console.log(newMovie)
+    axios.post("http://localhost:3000/movies" , newMovie)
+    .then(response => {
+        console.log(response.data);
+    })
+    .catch(error =>
+    console.error("Error al crear película" , error))
 }
 
 const clearForm = () => {

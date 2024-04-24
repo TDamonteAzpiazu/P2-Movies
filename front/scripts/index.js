@@ -27,6 +27,3 @@ addMovieButton?.addEventListener("click" , addMovie);
 
 const clearFormButton = document.getElementById("clearFormButton") ;
 clearFormButton?.addEventListener("click" , clearForm);
-
-
-

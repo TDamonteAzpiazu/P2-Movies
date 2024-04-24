@@ -25,8 +25,6 @@ function createMovieCard(data) {
     const movieGenre = document.createElement("p");
     const movieRate = document.createElement("p");
 
-    console.log(genre)
-
     moviePoster.src = poster ; 
     movieTitle.innerHTML = title ; 
     movieYear.innerHTML = `Año: ${year}`; 
