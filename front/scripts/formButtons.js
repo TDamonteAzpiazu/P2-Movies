@@ -13,6 +13,7 @@ const currentDate = new Date().getFullYear()
 
 const addMovie = () => {
     event.preventDefault(); 
+
     if(!movieTitle.value||!movieDirector.value||!movieYear.value||!movieDuration.value||!movieRate.value||!moviePoster.value){
         alert("Faltan campos por completar");
         return
@@ -41,17 +42,19 @@ const addMovie = () => {
     const [horas, minutos] = tiempoOriginal.split(":").map(Number);
     const durationString = `${horas}h ${minutos}min`;
 
+    const yearNumber = parseInt(movieYear.value)
+    const rateNumber = parseFloat(movieRate.value)
+
     const newMovie = {
         title : movieTitle.value ,
-        year : movieYear.value ,
+        year : yearNumber ,
         director : movieDirector.value ,
         duration : durationString ,
         genre : selectedGenres ,
-        rate : movieRate.value ,
+        rate : rateNumber ,
         poster : moviePoster.value
     };
     
-    console.log(newMovie)
     axios.post("http://localhost:3000/movies" , newMovie)
     .then(response => {
         console.log(response.data);
