@@ -56,8 +56,8 @@ const addMovie = () => {
     };
     
     axios.post("http://localhost:3000/movies" , newMovie)
-    .then(response => {
-        console.log(response.data);
+    .then(() => {
+        alert("Pelicula enviada.");
     })
     .catch(error =>
     console.error("Error al crear película" , error))
